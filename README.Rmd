@@ -5,7 +5,7 @@ output:
 # bibliography: references.bib
 ---
 
-# Template Title <img src="img/logo.png" style="position:absolute;top:0px;right:425px;" />
+# Template Title <img src="img/logo.png" style="position:absolute;top:0px;right:100px;" />
 _author_ -> **[Niccolò Salvini](https://niccolosalvini.netlify.app/)** \n
 
 _date_ -> `r Sys.Date()`
