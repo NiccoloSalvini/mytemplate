@@ -1,14 +1,13 @@
 ---
-title: "Template Title"
-author: "[Niccolò Salvini](https://niccolosalvini.netlify.app/)"
-date: "`r Sys.Date()`"
 output: 
   rmarkdown:: github_document
   toc: true
 # bibliography: references.bib
-  
 ---
+# Template Title
+author: [Niccolò Salvini](https://niccolosalvini.netlify.app/) \n
 
+date: `r Sys.Date()`
 
 <img src="logo.png" style="position:absolute;top:0px;right:425px;" />
 
@@ -40,11 +39,18 @@ set.seed(27)
 
 ## Introduction
 
+## Deployment happens
 
-## Analysis
+## Description
 
+## Visuals
 
-## Conclusion
+## Usage
 
+## Project status
+
+## Next features:
+
+## License
 
 ## References
