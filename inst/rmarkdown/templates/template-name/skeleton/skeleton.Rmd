@@ -8,7 +8,7 @@ output:
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 
-# Template Title <img src="logo.png" style="position:absolute;top:0px;right:425px;" />
+# Template Title <img src="img/logo.png" align="right" height="80" />
 _author_: **[Niccolò Salvini](https://niccolosalvini.netlify.app/)** \n
 
 _date_: `r Sys.Date()`
