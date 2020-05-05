@@ -2,10 +2,16 @@ Package: mytemplate
 Type: Package
 Title: initialize github readme and a proj workflow
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: Creative Commons CC0 1.0 Universal
+Author: person("Niccolò", "Salvini", email = "niccolo.salvini27@gmail.com",
+                  role = c("aut", "cre"))
+Maintainer: The package maintainer is <niccolo.salvini27@gmail.com>
+Description: This template is designed to speed up the process of compiling a decent 
+  and well organized (at least according to me) README.Rmd  . It does that by formatting
+  the global chunk options with the most common features and It also sets up a clear 
+  path/workflow to be assertive in explaning the project's aim. Moreover It gently pushes
+  the project leader to split up main files into different files (.R , .bib) according 
+  to their respective unique goals. 
+License: Creative Commons CC0 4.0 Universal
 Encoding: UTF-8
 LazyData: true
+Dependencies: htmltools, knitr

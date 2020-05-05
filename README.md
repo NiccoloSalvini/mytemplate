@@ -3,7 +3,7 @@
 
 *author* -\> **[Niccolò Salvini](https://niccolosalvini.netlify.app/)** 
 
-*date* -\> 2020-05-05
+*date* -\> 2020-05-06
 
 <br> <br>
 
@@ -26,14 +26,14 @@ library("devtools")
 install_github("NiccoloSalvini/mytemplate")
 ```
 
-then select `File -> New File -> R Markdown... -> From
-Template`
+Reload the session and then select `File -> New File -> R Markdown... ->
+From Template`
 
 <center>
 
 <p align="center">
 
-<img src="img/visual.png" width="582" style="display: block; margin: auto;" />
+<img src="img/visual.png" width="582" />
 
 </p>
 
@@ -71,7 +71,14 @@ given so that dependencies are explicited and well organized.
 **utils.R** are common functions that allows the coder to be more
 productive and efficient, if you already have your personal package then
 you are not going to need it. It has the aim to gather all the user
-defined functions that are explicitly designed to help
+defined functions that are explicitly designed to help.
+
+### fig alignement centered :
+
+Given that github\_document format does not center images, it has been
+developed a workaround to do it that directly interferes with the HTML.
+You are just needing to add to the singular chunk options the:
+`imgcenter = TRUE` .
 
 ### opts\_chunk:
 
@@ -91,7 +98,6 @@ defined functions that are explicitly designed to help
       fig.path = "img/",
       fig.width=12,
       fig.height=8,
-      fig.align = "center", 
       cache = FALSE           
     )
     
@@ -103,6 +109,14 @@ defined functions that are explicitly designed to help
     source(file ='libs.R')
     # reusable functions are in the utils.R pack
     source(file = "utils.R")
+    
+    knitr::knit_hooks$set(imgcenter = function(before, options, envir){
+      if (before) {
+        HTML("<p align='center'>")
+      } else {
+        HTML("</p>")
+      }
+    })
     
     set.seed(27) 
 
@@ -123,5 +137,10 @@ defined functions that are explicitly designed to help
 ## Next features:
 
 ## License:
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Quest’opera
+è distribuita con Licenza
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative
+Commons Attribuzione 4.0 Internazionale</a>.
 
 ## References:

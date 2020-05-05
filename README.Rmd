@@ -14,12 +14,10 @@ _date_ -> `r Sys.Date()`
 
 ```{r global.options, include = FALSE}
 library(knitr)
-library(htmltools)
 opts_chunk$set(
   cache       = FALSE,    # if TRUE knitr will cache the results to reuse in future knits
   fig.width   = 12,       # the width for plots created by code chunk
   fig.height  = 8,        # the height for plots created by code chunk
-  fig.align   = 'center', # how to align graphics in the final doc. 'left', 'right', 'center'
   fig.path    = "img/",   # file path to the directory where knitr DESTINATION shall store the graphics files
   results     = 'asis',   # knitr will pass through results without reformatting them
   echo        = TRUE,     # in FALSE knitr will not display code in the code chunk above it's results
@@ -29,9 +27,9 @@ opts_chunk$set(
 
 knitr::knit_hooks$set(imgcenter = function(before, options, envir){
   if (before) {
-    HTML("<p align='center'>")
+    htmltools::HTML("<p align='center'>")
   } else {
-    HTML("</p>")
+    htmltools::HTML("</p>")
   }
 })
 ```
@@ -50,7 +48,7 @@ library("devtools")
 install_github("NiccoloSalvini/mytemplate")
 ```
 
-then select `File -> New File -> R Markdown... -> From Template`
+Reload the session and then select `File -> New File -> R Markdown... -> From Template`
 
 <center>
 ```{r graphics, echo=FALSE, imgcenter = TRUE}
@@ -77,7 +75,12 @@ put your logo the _img_ folder
 ### workflow organization
 
 I believe that each part of the code whose aim is defined should be contained in a singular file. 
-3 files are initialized **reference.bib** where all the references are put. **libs.R** where all libraries are given so that dependencies are explicited and well organized. **utils.R** are common functions that allows the coder to be more productive and efficient, if you already have your personal package then you are not going to need it. It has the aim to gather all the user defined functions that are explicitly designed to help
+3 files are initialized **reference.bib** where all the references are put. **libs.R** where all libraries are given so that dependencies are explicited and well organized. **utils.R** are common functions that allows the coder to be more productive and efficient, if you already have your personal package then you are not going to need it. It has the aim to gather all the user defined functions that are explicitly designed to help.
+  
+  
+### fig alignement centered : 
+Given that github_document format does not center images, it has been developed a workaround to do it that directly interferes with the HTML. You are just needing to add to the singular chunk options the:  `imgcenter = TRUE` .
+  
 
 ###  opts_chunk: 
 
@@ -88,7 +91,7 @@ I believe that each part of the code whose aim is defined should be contained in
   - references.bib file for referenceses
   - libs.R for libraries
   - utils.R for userdefined iff you have not a personal package
-  
+
 
 ```
 knitr::opts_chunk$set(
@@ -97,7 +100,6 @@ knitr::opts_chunk$set(
   fig.path = "img/",
   fig.width=12,
   fig.height=8,
-  fig.align = "center", 
   cache = FALSE           
 )
 
@@ -109,6 +111,14 @@ file.create("utils.R")
 source(file ='libs.R')
 # reusable functions are in the utils.R pack
 source(file = "utils.R")
+
+knitr::knit_hooks$set(imgcenter = function(before, options, envir){
+  if (before) {
+    HTML("<p align='center'>")
+  } else {
+    HTML("</p>")
+  }
+})
 
 set.seed(27) 
 ```
@@ -130,5 +140,7 @@ set.seed(27)
 ## Next features:
 
 ## License:
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Quest'opera è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribuzione 4.0 Internazionale</a>.
 
 ## References:
