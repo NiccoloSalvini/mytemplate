@@ -43,7 +43,7 @@ install_github("NiccoloSalvini/mytemplate")
 
 then select `File -> New File -> R Markdown... -> From Template`
 
-```{r graphics, echo=FALSE}
+```{r graphics, echo=FALSE, fig.align= 'center'}
 include_graphics("img/visual.png") 
 ```
 <br> 
