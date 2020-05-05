@@ -9,27 +9,26 @@ output:
 
 
 # Template Title <img src="img/logo.png" align="right" height="80" />
-_author_: **[Niccolò Salvini](https://niccolosalvini.netlify.app/)** \n
+_author_: **[Niccolò Salvini](https://niccolosalvini.netlify.app/)** 
 
 _date_: `r Sys.Date()`
 
 
-
-```{r, include=FALSE, message=FALSE}
+```{r global.options, include=FALSE}
 knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "img",
   warning = FALSE,  
-  fig.width=12,
-  fig.height=8,
-  fig.align = "center",
-  cache = FALSE       # set to TRUE to save results from last compilation
+  strip.white = TRUE,     # if FALSE knitr will not remove white spaces at the beg or end
+  fig.path = "img/",      # file path to the directory DESTINATION where knitr shall store the
+  fig.width=12,           # the width for plots created by code chunk
+  fig.height=8,           # the height for plots created by code chunk
+  fig.align = "center",   # how to align graphics in the final doc. 'left', 'right',
+  cache = FALSE           # if TRUE knitr will cache the results to reuse in future knits
 )
 
 file.create("references.bib")
 file.create("libs.R")
 file.create("utils.R")
+
 # libraries are in the libs.R pac
 source(file ='libs.R')
 # reusable functions are in the utils.R pack
@@ -39,7 +38,13 @@ source(file = "utils.R")
 set.seed(27) 
 ```
 
-<br> <br> <br>
+<br> <br> 
+
+## Reusable chunks
+
+```{r graphics, echo=FALSE}
+include_graphics("") 
+```
 
 ## Introduction:
 
