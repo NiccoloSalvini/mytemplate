@@ -8,6 +8,8 @@
 <br> <br>
     <br>
 
+![screenshot](img/visual.png)
+
 ## upper right logo
 
 top:0px;right:425px
@@ -19,7 +21,8 @@ top:0px;right:425px
   - figures are centered 12X8
   - fig.path = “img” so that all readme files are stored there
   - 3 files are created:
-      - .bib file for referencesse \_ libs.R for libraries
+      - references.bib file for referenceses
+      - libs.R for libraries
       - utils.R for userdefined iff you have not a personal package
 
 <!-- end list -->

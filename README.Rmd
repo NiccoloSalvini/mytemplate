@@ -12,9 +12,29 @@ _date_ -> `r Sys.Date()`
 
 <br> <br> <br>
 
+
+```{r options, include=FALSE}
+
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "img",
+  warning = FALSE,  
+  fig.width=12,
+  fig.height=8,
+  fig.align = "center",
+  cache = FALSE       # set to TRUE to save results from last compilation
+)
+
+```
+
+![screenshot](img/visual.png)
+
+
 ## upper right logo
 
 top:0px;right:425px
+
 ```
 <img src="img/logo.png" style="position:absolute;top:0px;right:425px;" />
 
@@ -27,9 +47,10 @@ top:0px;right:425px
 - figures are centered 12X8
 - fig.path = "img" so that all readme files are stored there
 - 3 files are created:
-  - .bib file for referencesse
-  _ libs.R for libraries
+  - references.bib file for referenceses
+  - libs.R for libraries
   - utils.R for userdefined iff you have not a personal package
+  
 
 ```
 knitr::opts_chunk$set(
