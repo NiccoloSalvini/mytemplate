@@ -1,10 +1,10 @@
 
-# Template Title
+# Template Title <img src="img/logo.png" style="position:absolute;top:0px;right:425px;" />
 
-author: “[Niccolò Salvini](https://niccolosalvini.netlify.app/)” 
+*author* -\> **[Niccolò Salvini](https://niccolosalvini.netlify.app/)** 
 
-date: 2020-05-05
-<img src="img/logo.png" style="position:absolute;top:0px;right:425px;" />
+*date* -\> 2020-05-05
+
 <br> <br>
     <br>
 
@@ -46,20 +46,20 @@ top:0px;right:425px
     
     set.seed(27) 
 
-## Introduction
+## Introduction:
 
-## Deployment happens
+## Deployment happens:
 
-## Description
+## Description:
 
-## Visuals
+## Visuals:
 
-## Usage
+## Usage:
 
-## Project status
+## Project status:
 
 ## Next features:
 
-## License
+## License:
 
-## References
+## References:

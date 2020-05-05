@@ -4,12 +4,16 @@ output:
   toc: true
 # bibliography: references.bib
 ---
-# Template Title
-author: [Niccolò Salvini](https://niccolosalvini.netlify.app/) \n
 
-date: `r Sys.Date()`
+<!-- README.md is generated from README.Rmd. Please edit that file -->
 
-<img src="logo.png" style="position:absolute;top:0px;right:425px;" />
+
+# Template Title <img src="logo.png" style="position:absolute;top:0px;right:425px;" />
+_author_: **[Niccolò Salvini](https://niccolosalvini.netlify.app/)** \n
+
+_date_: `r Sys.Date()`
+
+
 
 ```{r, include=FALSE, message=FALSE}
 knitr::opts_chunk$set(
@@ -35,22 +39,22 @@ source(file = "utils.R")
 set.seed(27) 
 ```
 
+<br> <br> <br>
 
+## Introduction:
 
-## Introduction
+## Deployment happens:
 
-## Deployment happens
+## Description:
 
-## Description
+## Visuals:
 
-## Visuals
+## Usage:
 
-## Usage
-
-## Project status
+## Project status:
 
 ## Next features:
 
-## License
+## License:
 
-## References
+## References:

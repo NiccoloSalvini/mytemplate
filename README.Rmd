@@ -5,11 +5,11 @@ output:
 # bibliography: references.bib
 ---
 
-# Template Title
-author: "[Niccolò Salvini](https://niccolosalvini.netlify.app/)" \n
+# Template Title <img src="img/logo.png" style="position:absolute;top:0px;right:425px;" />
+_author_ -> **[Niccolò Salvini](https://niccolosalvini.netlify.app/)** \n
 
-date: `r Sys.Date()`
-<img src="img/logo.png" style="position:absolute;top:0px;right:425px;" />
+_date_ -> `r Sys.Date()`
+
 <br> <br> <br>
 
 ## upper right logo
@@ -57,20 +57,20 @@ set.seed(27)
 
 
 
-## Introduction
+## Introduction:
 
-## Deployment happens
+## Deployment happens:
 
-## Description
+## Description:
 
-## Visuals
+## Visuals:
 
-## Usage
+## Usage:
 
-## Project status
+## Project status:
 
 ## Next features:
 
-## License
+## License:
 
-## References
+## References:
