@@ -1,0 +1,50 @@
+---
+title: "Template Title"
+author: "[Niccolò Salvini](https://niccolosalvini.netlify.app/)"
+date: "`r Sys.Date()`"
+output: 
+  rmarkdown:: github_document
+  toc: true
+# bibliography: references.bib
+  
+---
+
+
+<img src="logo.png" style="position:absolute;top:0px;right:425px;" />
+
+```{r, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "img",
+  warning = FALSE,  
+  fig.width=12,
+  fig.height=8,
+  fig.align = "center",
+  cache = FALSE       # set to TRUE to save results from last compilation
+)
+
+file.create("references.bib")
+file.create("libs.R")
+file.create("utils.R")
+# libraries are in the libs.R pac
+source(file ='libs.R')
+# reusable functions are in the utils.R pack
+source(file = "utils.R")
+
+
+set.seed(27) 
+```
+
+
+
+## Introduction
+
+
+## Analysis
+
+
+## Conclusion
+
+
+## References

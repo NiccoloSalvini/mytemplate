@@ -1,0 +1,4 @@
+name: mytemplate
+description: >
+   a very basical template for a github formatted README
+create_dir: FALSE
