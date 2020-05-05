@@ -14,6 +14,7 @@ _date_ -> `r Sys.Date()`
 
 ```{r global.options, include = FALSE}
 library(knitr)
+library(htmltools)
 opts_chunk$set(
   cache       = FALSE,    # if TRUE knitr will cache the results to reuse in future knits
   fig.width   = 12,       # the width for plots created by code chunk
@@ -52,7 +53,7 @@ install_github("NiccoloSalvini/mytemplate")
 then select `File -> New File -> R Markdown... -> From Template`
 
 <center>
-```{r graphics, echo=FALSE}
+```{r graphics, echo=FALSE, imgcenter = TRUE}
 include_graphics("img/visual.png") 
 ```
 </center>

@@ -31,7 +31,11 @@ Template`
 
 <center>
 
+<p align="center">
+
 <img src="img/visual.png" width="582" style="display: block; margin: auto;" />
+
+</p>
 
 </center>
 
