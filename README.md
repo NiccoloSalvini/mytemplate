@@ -3,6 +3,7 @@ Template Title
 [Niccolò Salvini](https://niccolosalvini.netlify.app/)
 2020-05-05
 
+<img src="img/logo.png" style="position:absolute;top:0px;right:425px;" />
 <br> <br>
     <br>
 
@@ -11,8 +12,6 @@ Template Title
 top:0px;right:425px
 
     <img src="img/logo.png" style="position:absolute;top:0px;right:425px;" />
-
-<img src="img/logo.png" style="position:absolute;top:0px;right:425px;" />
 
 ## opts\_chunk:
 
@@ -40,7 +39,7 @@ top:0px;right:425px
     file.create("utils.R")
     # libraries are in the libs.R pac
     source(file ='libs.R')
-    # reusable functions are in the utils.R pack
+    # reusable functions are in the utils.R file
     source(file = "utils.R")
     
     
@@ -50,8 +49,16 @@ top:0px;right:425px
 
 ## Deployment happens
 
-## Analysis
+## Description
 
-## Conclusion
+## Visuals
+
+## Usage
+
+## Project status
+
+## Next features:
+
+## License
 
 ## References

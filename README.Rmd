@@ -8,6 +8,7 @@ output:
 # bibliography: references.bib
   
 ---
+<img src="img/logo.png" style="position:absolute;top:0px;right:425px;" />
 <br> <br> <br>
 
 ## upper right logo
@@ -17,7 +18,7 @@ top:0px;right:425px
 <img src="img/logo.png" style="position:absolute;top:0px;right:425px;" />
 
 ```
-<img src="img/logo.png" style="position:absolute;top:0px;right:425px;" />
+
 
 ##  opts_chunk: 
 
