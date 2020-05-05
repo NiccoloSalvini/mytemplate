@@ -43,9 +43,12 @@ install_github("NiccoloSalvini/mytemplate")
 
 then select `File -> New File -> R Markdown... -> From Template`
 
+<center>
 ```{r graphics, echo=FALSE, fig.align= 'center'}
 include_graphics("img/visual.png") 
 ```
+</center>
+
 <br> 
 
 Once you have it in the tab panel, save it as 'README' (this is the correct commonly shared notation), do *not* specify the format, it will be **.Rmd** by default. Once you are ready with your readme finally *knit* it and then commit you stuff to master branch.

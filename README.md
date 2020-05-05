@@ -29,7 +29,12 @@ install_github("NiccoloSalvini/mytemplate")
 then select `File -> New File -> R Markdown... -> From
 Template`
 
+<center>
+
 <img src="img/visual.png" width="582" style="display: block; margin: auto;" />
+
+</center>
+
 <br>
 
 Once you have it in the tab panel, save it as ‘README’ (this is the
