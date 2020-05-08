@@ -15,7 +15,6 @@ _date_: `r Sys.Date()`
 
 
 ```{r global.options, include=FALSE}
-library(htmltools)
 knitr::opts_chunk$set(
   warning = FALSE,  
   strip.white = TRUE,     # if FALSE knitr will not remove white spaces at the beg or end
@@ -52,7 +51,7 @@ set.seed(27)
 ## Reusable chunks
 
 ```{r graphics, echo=FALSE, imgcenter = TRUE}
-include_graphics("") 
+knitr::include_graphics("") 
 ```
 
 ## Introduction:
