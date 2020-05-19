@@ -3,7 +3,7 @@ output:
   github_document
 ---
 
-# "Template Title" <img src="img/logo.png" style="position:absolute;top:0px;right:0px;"  />
+# "Template Title" <img src="img/logo.png" align="right" height="80" />
 
 _author_: **[Niccolò Salvini](https://niccolosalvini.netlify.app/)**
 _date_: `r format(Sys.Date(), "%d %B, %Y")`

@@ -1,5 +1,5 @@
 
-# “Template Title” <img src="img/logo.png" style="position:absolute;top:0px;right:0px;"  />
+# “Template Title” <img src="img/logo.png" align="right" height="80" />
 
 *author*: **[Niccolò Salvini](https://niccolosalvini.netlify.app/)**
 *date*: 20 maggio, 2020

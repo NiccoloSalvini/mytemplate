@@ -1,7 +1,5 @@
 ---
-title: "Template Title"
-author: "**[Niccolò Salvini](https://niccolosalvini.netlify.app/)**"
-date: '`r format(Sys.Date(), "%d %B, %Y")`'
+title: "Template Title quick toc"
 output: 
   github_document:
     pandoc_args: "--mathjax"
@@ -13,10 +11,11 @@ output:
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+# "Template Title" <img src="logo.png" align="right" height="80" />
 
-<img src="logo.png" style="position:absolute;top:0px;right:0px;"  />
 
-
+_author_: **[Niccolò Salvini](https://niccolosalvini.netlify.app/)**
+_date_: `r format(Sys.Date(), "%d %B, %Y")`
 
 
 ```{r global.options, include=FALSE}
