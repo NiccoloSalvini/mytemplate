@@ -1,14 +1,12 @@
 ---
+title: "Template Title"
+author: "**[Niccolò Salvini](https://niccolosalvini.netlify.app/)**"
+date: '`r format(Sys.Date(), "%d %B, %Y")`'
 output: 
-  rmarkdown:: github_document
-  toc: true
-# bibliography: references.bib
+  github_document
 ---
 
-# Template Title <img src="img/logo.png" align="right" height="80" />
-_author_ -> **[Niccolò Salvini](https://niccolosalvini.netlify.app/)** \n
-
-_date_ -> `r Sys.Date()`
+<img src="img/logo.png" style="position:absolute;top:20px;right:30px;"  />
 
 <br> <br>
 
@@ -25,6 +23,8 @@ opts_chunk$set(
   strip.white = TRUE,     # if FALSE knitr will not remove white spaces at the beg or end of code chunk
   warning     = FALSE)    # if FALSE knitr will not display any warning messages in the final document
 
+
+## hook to center image
 knitr::knit_hooks$set(imgcenter = function(before, options, envir){
   if (before) {
     htmltools::HTML("<p align='center'>")
@@ -32,6 +32,8 @@ knitr::knit_hooks$set(imgcenter = function(before, options, envir){
     htmltools::HTML("</p>")
   }
 })
+
+
 ```
 
 
@@ -65,28 +67,34 @@ Once you have proceed with the step above save the newly appeared rmd file as 'R
 
 ## Main Features:
 
----
-
-### upper right logo
+### 1. upper right logo
 
 put your logo the _img_ folder
 ```
-<img src="img/logo.png" align="right" height="80" />
+<img src="img/logo.png" style="position:absolute;top:20px;right:30px;"  />
 
 ```
-### workflow organization
-
+### 2. workflow organization:
 I believe that each part of the code whose aim is defined should be contained in a singular file. 
 3 files are initialized **reference.bib** where all the references are put. **libs.R** where all libraries are given so that dependencies are explicited and well organized. **utils.R** are common functions that allows the coder to be more productive and efficient, if you already have your personal package then you are not going to need it. It has the aim to gather all the user defined functions that are explicitly designed to help.
   
   
-### fig alignement centered : 
-Given that github_document format does not center images, it has been developed a workaround to do it that directly interferes with the HTML. You are just needing to add to the singular chunk options the:  `imgcenter = TRUE` .
+### 3. fig alignement centered: 
+Given that github_document format does not center images, it has been developed a workaround to do it. The code directly interferes with the HTML which clear up the job. You just need to add to the singular chunk options the:  `imgcenter = TRUE` . It centers only locally saved images, so I strongly encourage you to initialize a folder where you store all of your images.
   
+```{r leottona, echo=FALSE, imgcenter = TRUE}
+knitr::include_graphics("img/leottona.jpg") 
+```
+### 4. TOC:
+Ready to knit **T**able **O**f **C**ontent, it goes deep down to the third nested element. If you are not such a diver set it = 2 and that is it.
 
-###  opts_chunk: 
+### 5. pandoc_args:
+Pandoc is going to render *matjax*. I have always been exposed to that, If you are not a fan you can easily switch it in the YALM header with the other options.
 
-- figures are centered 12X8
+
+### 6. opts_chunk: 
+
+- figures in output are centered 12X8
 - cache can be set = TRUE when rendering becomes heavy 
 - white space at the beginning & at the end are squished
 - 3 files are created:
@@ -125,23 +133,25 @@ knitr::knit_hooks$set(imgcenter = function(before, options, envir){
 set.seed(27)
 ```
 
+
+---
 # Structure
 
-## Introduction:
+### Introduction:
 
-## Deployment happens:
+### Deployment happens:
 
-## Description:
+### Description:
 
-## Visuals:
+### Visuals:
 
-## Usage:
+### Usage:
 
-## Project status:
+### Project status:
 
-## Next features:
+### Next features:
 
-## License:
+### License:
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Quest'opera è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribuzione 4.0 Internazionale</a>.
 

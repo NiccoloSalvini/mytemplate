@@ -1,17 +1,22 @@
 ---
+title: "Template Title"
+author: "**[Niccolò Salvini](https://niccolosalvini.netlify.app/)**"
+date: '`r format(Sys.Date(), "%d %B, %Y")`'
 output: 
-  rmarkdown:: github_document
-  toc: true
-# bibliography: references.bib
+  github_document:
+    pandoc_args: "--mathjax"
+    toc: true
+    toc_depth: 3
+    fig_width: 5
+    fig_height: 5
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 
-# Template Title <img src="img/logo.png" align="right" height="80" />
-_author_: **[Niccolò Salvini](https://niccolosalvini.netlify.app/)** 
+<img src="logo.png" style="position:absolute;top:20px;right:30px;"  />
 
-_date_: `r Sys.Date()`
+
 
 
 ```{r global.options, include=FALSE}
@@ -33,6 +38,8 @@ knitr::knit_hooks$set(imgcenter = function(before, options, envir){  # to center
   }
 })
 
+
+
 file.create("references.bib")
 file.create("libs.R")
 file.create("utils.R")
@@ -48,28 +55,27 @@ set.seed(27)
 
 <br> <br> 
 
-## Reusable chunks
 
-```{r graphics, echo=FALSE, imgcenter = TRUE}
-knitr::include_graphics("") 
+```{r graphics, echo=FALSE, imgcenter = TRUE, fig.cap = "FIRENZE"}
+knitr::include_graphics("FIRENZE.jpeg") 
 ```
 
-## Introduction:
+### Introduction:
 
-## Deployment happens:
+### Deployment happens:
 
-## Description:
+### Description:
 
-## Visuals:
+### Visuals:
 
-## Usage:
+### Usage:
 
-## Project status:
+### Project status:
 
-## Next features:
+### Next features:
 
-## License:
+### License:
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Quest'opera è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribuzione 4.0 Internazionale</a>.
 
-## References:
+### References:

@@ -1,9 +1,9 @@
+Template Title
+================
+**[Niccolò Salvini](https://niccolosalvini.netlify.app/)**
+20 maggio, 2020
 
-# Template Title <img src="img/logo.png" align="right" height="80" />
-
-*author* -\> **[Niccolò Salvini](https://niccolosalvini.netlify.app/)** 
-
-*date* -\> 2020-05-08
+<img src="img/logo.png" style="position:absolute;top:20px;right:30px;"  />
 
 <br> <br>
 
@@ -57,15 +57,14 @@ references.bib by uncommenting it in the YALM header.
 
 ## Main Features:
 
------
+### 1\. upper right logo
 
-### upper right logo
+put your logo the *img*
+    folder
 
-put your logo the *img* folder
+    <img src="img/logo.png" style="position:absolute;top:20px;right:30px;"  />
 
-    <img src="img/logo.png" align="right" height="80" />
-
-### workflow organization
+### 2\. workflow organization:
 
 I believe that each part of the code whose aim is defined should be
 contained in a singular file. 3 files are initialized **reference.bib**
@@ -76,16 +75,36 @@ productive and efficient, if you already have your personal package then
 you are not going to need it. It has the aim to gather all the user
 defined functions that are explicitly designed to help.
 
-### fig alignement centered :
+### 3\. fig alignement centered:
 
 Given that github\_document format does not center images, it has been
-developed a workaround to do it that directly interferes with the HTML.
-You are just needing to add to the singular chunk options the:
-`imgcenter = TRUE` .
+developed a workaround to do it. The code directly interferes with the
+HTML which clear up the job. You just need to add to the singular chunk
+options the: `imgcenter = TRUE` . It centers only locally saved images,
+so I strongly encourage you to initialize a folder where you store all
+of your images.
 
-### opts\_chunk:
+<p align="center">
 
-  - figures are centered 12X8
+<img src="img/leottona.jpg" width="274" />
+
+</p>
+
+### 4\. TOC:
+
+Ready to knit **T**able **O**f **C**ontent, it goes deep down to the
+third nested element. If you are not such a diver set it = 2 and that is
+it.
+
+### 5\. pandoc\_args:
+
+Pandoc is going to render *matjax*. I have always been exposed to that,
+If you are not a fan you can easily switch it in the YALM header with
+the other options.
+
+### 6\. opts\_chunk:
+
+  - figures in output are centered 12X8
   - cache can be set = TRUE when rendering becomes heavy
   - white space at the beginning & at the end are squished
   - 3 files are created:
@@ -123,23 +142,25 @@ You are just needing to add to the singular chunk options the:
     
     set.seed(27)
 
+-----
+
 # Structure
 
-## Introduction:
+### Introduction:
 
-## Deployment happens:
+### Deployment happens:
 
-## Description:
+### Description:
 
-## Visuals:
+### Visuals:
 
-## Usage:
+### Usage:
 
-## Project status:
+### Project status:
 
-## Next features:
+### Next features:
 
-## License:
+### License:
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Quest’opera
 è distribuita con Licenza
