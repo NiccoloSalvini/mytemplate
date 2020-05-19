@@ -6,9 +6,9 @@ output:
     toc_depth: 3
 ---
 
----
-
-# "Template Title" <img src="img/CopyOfLogo.png" align="right" height="80" />
+<img src="img/CopyOfLogo.png" align="right" height="80" />
+ 
+# "Template Title"
 
 _author_: **[Niccolò Salvini](https://niccolosalvini.netlify.app/)**
 _date_: `r format(Sys.Date(), "%d %B, %Y")`
@@ -138,7 +138,10 @@ set.seed(27)
 
 
 ---
-# Structure
+# General Structure
+
+
+This is how to plainly explain a project, It takes a couple of step but then *questions*, I can assure, are not coming.
 
 ### Introduction:
 
@@ -150,9 +153,9 @@ set.seed(27)
 
 ### Usage:
 
-### Project status:
+### Project Status:
 
-### Next features:
+### Next Features:
 
 ### License:
 

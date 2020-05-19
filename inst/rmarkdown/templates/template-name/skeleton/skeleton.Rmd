@@ -3,11 +3,16 @@ title: "Summary"
 output: 
   github_document:
     pandoc_args: "--mathjax"
+    toc: TRUE
+    toc_depth: 3
     fig_width: 5
     fig_height: 5
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+
+
 
 ```{r global.options, include=FALSE}
 knitr::opts_chunk$set(
@@ -16,8 +21,7 @@ knitr::opts_chunk$set(
   fig.path = "img/",                  # file path to the directory DESTINATION where knitr shall store the
   fig.width=12,                       # the width for plots created by code chunk
   fig.height=8,                       # the height for plots created by code chunk
-  cache = FALSE,                      # if TRUE knitr will cache the results to reuse in future knits
-  dpi = 150
+  cache = FALSE                       # if TRUE knitr will cache the results to reuse in future knits
 )
 
 
@@ -46,19 +50,18 @@ set.seed(27)
 
 
 
-
-# "Template Title" <img width="90px" alt="isoband logo" align="right" src="logo.png">
+<img src="logo.png" align="right" height="80" />
+ 
+# "Template Title"
 
 _author_: **[Niccolò Salvini](https://niccolosalvini.netlify.app/)**
 _date_: `r format(Sys.Date(), "%d %B, %Y")`
 
 
-
-
 <br> <br> 
 
 
-```{r graphics, echo=FALSE, imgcenter = TRUE, fig.cap = "FIRENZE"}
+```{r FIRENZE, echo=FALSE, imgcenter = TRUE, fig.cap = "FIRENZE", fig.retina=1}
 knitr::include_graphics("FIRENZE.jpeg") 
 ```
 
@@ -72,9 +75,9 @@ knitr::include_graphics("FIRENZE.jpeg")
 
 ### Usage:
 
-### Project status:
+### Project Status:
 
-### Next features:
+### Next Features:
 
 ### License:
 

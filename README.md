@@ -1,8 +1,7 @@
 Summary
 ================
 
-  - [“Template Title”
-    <img src="img/CopyOfLogo.png" align="right" height="80" />](#template-title)
+  - [“Template Title”](#template-title)
       - [Description:](#description)
       - [Usage:](#usage)
       - [Main Features:](#main-features)
@@ -11,20 +10,20 @@ Summary
           - [3. fig alignement centered:](#fig-alignement-centered)
           - [4. pandoc\_args:](#pandoc_args)
           - [5. opts\_chunk:](#opts_chunk)
-  - [Structure](#structure)
+  - [General Structure](#general-structure)
       - [Introduction:](#introduction)
       - [Deployment happens:](#deployment-happens)
       - [Description:](#description-1)
       - [Visuals:](#visuals)
       - [Usage:](#usage-1)
-      - [Project status:](#project-status)
-      - [Next features:](#next-features)
+      - [Project Status:](#project-status)
+      - [Next Features:](#next-features)
       - [License:](#license)
       - [References:](#references)
 
------
+<img src="img/CopyOfLogo.png" align="right" height="80" />
 
-# “Template Title” <img src="img/CopyOfLogo.png" align="right" height="80" />
+# “Template Title”
 
 *author*: **[Niccolò Salvini](https://niccolosalvini.netlify.app/)**
 *date*: 20 maggio, 2020
@@ -162,7 +161,11 @@ the other options.
 
 -----
 
-# Structure
+# General Structure
+
+This is how to plainly explain a project, It takes a couple of step but
+then *questions*, I can assure, are not
+coming.
 
 ### Introduction:
 
@@ -174,9 +177,9 @@ the other options.
 
 ### Usage:
 
-### Project status:
+### Project Status:
 
-### Next features:
+### Next Features:
 
 ### License:
 
