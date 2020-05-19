@@ -1,23 +1,31 @@
 ---
-title: "Summary"
+title: "Template Title quick toc"
 output: 
   github_document:
     pandoc_args: "--mathjax"
+    toc: true
+    toc_depth: 3
     fig_width: 5
     fig_height: 5
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+# "Template Title" <img src="logo.png" align="right" height="80" />
+
+
+_author_: **[Niccolò Salvini](https://niccolosalvini.netlify.app/)**
+_date_: `r format(Sys.Date(), "%d %B, %Y")`
+
+
 ```{r global.options, include=FALSE}
 knitr::opts_chunk$set(
   warning = FALSE,  
-  strip.white = TRUE,                 # if FALSE knitr will not remove white spaces at the beg or end
-  fig.path = "img/",                  # file path to the directory DESTINATION where knitr shall store the
-  fig.width=12,                       # the width for plots created by code chunk
-  fig.height=8,                       # the height for plots created by code chunk
-  cache = FALSE,                      # if TRUE knitr will cache the results to reuse in future knits
-  dpi = 150
+  strip.white = TRUE,     # if FALSE knitr will not remove white spaces at the beg or end
+  fig.path = "img/",      # file path to the directory DESTINATION where knitr shall store the
+  fig.width=12,           # the width for plots created by code chunk
+  fig.height=8,           # the height for plots created by code chunk
+  cache = FALSE           # if TRUE knitr will cache the results to reuse in future knits
 )
 
 
@@ -43,17 +51,6 @@ source(file = "utils.R")
 
 set.seed(27) 
 ```
-
-
-
-
-# "Template Title" <img width="90px" alt="isoband logo" align="right" src="logo.png">
-
-_author_: **[Niccolò Salvini](https://niccolosalvini.netlify.app/)**
-_date_: `r format(Sys.Date(), "%d %B, %Y")`
-
-
-
 
 <br> <br> 
 

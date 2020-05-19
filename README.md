@@ -1,5 +1,30 @@
+Summary
+================
 
-# “Template Title” <img src="img/logo.png" align="right" height="80" />
+  - [“Template Title”
+    <img src="img/CopyOfLogo.png" align="right" height="80" />](#template-title)
+      - [Description:](#description)
+      - [Usage:](#usage)
+      - [Main Features:](#main-features)
+          - [1. upper right logo](#upper-right-logo)
+          - [2. workflow organization:](#workflow-organization)
+          - [3. fig alignement centered:](#fig-alignement-centered)
+          - [4. pandoc\_args:](#pandoc_args)
+          - [5. opts\_chunk:](#opts_chunk)
+  - [Structure](#structure)
+      - [Introduction:](#introduction)
+      - [Deployment happens:](#deployment-happens)
+      - [Description:](#description-1)
+      - [Visuals:](#visuals)
+      - [Usage:](#usage-1)
+      - [Project status:](#project-status)
+      - [Next features:](#next-features)
+      - [License:](#license)
+      - [References:](#references)
+
+-----
+
+# “Template Title” <img src="img/CopyOfLogo.png" align="right" height="80" />
 
 *author*: **[Niccolò Salvini](https://niccolosalvini.netlify.app/)**
 *date*: 20 maggio, 2020
@@ -89,19 +114,13 @@ of your images.
 
 </p>
 
-### 4\. TOC:
-
-Ready to knit **T**able **O**f **C**ontent, it goes deep down to the
-third nested element. If you are not such a diver set it = 2 and that is
-it.
-
-### 5\. pandoc\_args:
+### 4\. pandoc\_args:
 
 Pandoc is going to render *matjax*. I have always been exposed to that,
 If you are not a fan you can easily switch it in the YALM header with
 the other options.
 
-### 6\. opts\_chunk:
+### 5\. opts\_chunk:
 
   - figures in output are centered 12X8
   - cache can be set = TRUE when rendering becomes heavy

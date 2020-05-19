@@ -1,9 +1,14 @@
 ---
+title: "Summary"
 output: 
-  github_document
+  github_document:
+    toc: TRUE
+    toc_depth: 3
 ---
 
-# "Template Title" <img src="img/logo.png" align="right" height="80" />
+---
+
+# "Template Title" <img src="img/CopyOfLogo.png" align="right" height="80" />
 
 _author_: **[Niccolò Salvini](https://niccolosalvini.netlify.app/)**
 _date_: `r format(Sys.Date(), "%d %B, %Y")`
@@ -85,14 +90,12 @@ Given that github_document format does not center images, it has been developed 
 ```{r leottona, echo=FALSE, imgcenter = TRUE}
 knitr::include_graphics("img/leottona.jpg") 
 ```
-### 4. TOC:
-Ready to knit **T**able **O**f **C**ontent, it goes deep down to the third nested element. If you are not such a diver set it = 2 and that is it.
 
-### 5. pandoc_args:
+### 4. pandoc_args:
 Pandoc is going to render *matjax*. I have always been exposed to that, If you are not a fan you can easily switch it in the YALM header with the other options.
 
 
-### 6. opts_chunk: 
+### 5. opts_chunk: 
 
 - figures in output are centered 12X8
 - cache can be set = TRUE when rendering becomes heavy 
