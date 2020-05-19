@@ -9,7 +9,8 @@ Summary
           - [2. workflow organization:](#workflow-organization)
           - [3. fig alignement centered:](#fig-alignement-centered)
           - [4. pandoc\_args:](#pandoc_args)
-          - [5. opts\_chunk:](#opts_chunk)
+          - [5. TOC:](#toc)
+          - [6. opts\_chunk:](#opts_chunk)
   - [General Structure](#general-structure)
       - [Introduction:](#introduction)
       - [Deployment happens:](#deployment-happens)
@@ -119,7 +120,14 @@ Pandoc is going to render *matjax*. I have always been exposed to that,
 If you are not a fan you can easily switch it in the YALM header with
 the other options.
 
-### 5\. opts\_chunk:
+### 5\. TOC:
+
+**T**able **O**f **C**ontent, easy way to scroll down through sections.
+Eeeasy. TOC depth is set = 3 I recommend you to leave him alone, nested
+paragraphs following the \[3^{rd}\] can become a *Matrioska*, and that
+is totally another game.
+
+### 6\. opts\_chunk:
 
   - figures in output are centered 12X8
   - cache can be set = TRUE when rendering becomes heavy
