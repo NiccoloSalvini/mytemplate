@@ -1,9 +1,8 @@
-Template Title
-================
-**[Niccolò Salvini](https://niccolosalvini.netlify.app/)**
-20 maggio, 2020
 
-<img src="img/logo.png" style="position:absolute;top:0px;right:0px;"  />
+# “Template Title” <img src="img/logo.png" style="position:absolute;top:0px;right:0px;"  />
+
+*author*: **[Niccolò Salvini](https://niccolosalvini.netlify.app/)**
+*date*: 20 maggio, 2020
 
 <br> <br>
 
