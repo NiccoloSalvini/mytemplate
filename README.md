@@ -3,7 +3,7 @@ Template Title
 **[Niccolò Salvini](https://niccolosalvini.netlify.app/)**
 20 maggio, 2020
 
-<img src="img/logo.png" style="position:absolute;top:20px;right:30px;"  />
+<img src="img/logo.png" style="position:absolute;top:0px;right:0px;"  />
 
 <br> <br>
 

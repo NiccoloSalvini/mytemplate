@@ -14,7 +14,7 @@ output:
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 
-<img src="logo.png" style="position:absolute;top:20px;right:30px;"  />
+<img src="logo.png" style="position:absolute;top:0px;right:0px;"  />
 
 
 
