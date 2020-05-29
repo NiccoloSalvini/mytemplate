@@ -106,7 +106,7 @@ TOC depth is set = 3 I recommend you to leave him alone, nested paragraphs follo
   - utils.R for userdefined iff you have not a personal package
 
 
-```
+```{r telespiego, eval=FALSE }
 knitr::opts_chunk$set(
   warning = FALSE,  
   strip.white = TRUE,     

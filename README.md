@@ -26,7 +26,7 @@ Summary
 # “Template Title”
 
 *author*: **[Niccolò Salvini](https://niccolosalvini.netlify.app/)**
-*date*: 20 maggio, 2020
+*date*: 29 maggio, 2020
 
 <br> <br>
 
@@ -132,33 +132,35 @@ totally another game.
 
 <!-- end list -->
 
-    knitr::opts_chunk$set(
-      warning = FALSE,  
-      strip.white = TRUE,     
-      fig.path = "img/",
-      fig.width=12,
-      fig.height=8,
-      cache = FALSE           
-    )
-    
-    file.create("references.bib")
-    file.create("libs.R")
-    file.create("utils.R")
-    
-    # libraries are in the libs.R pac
-    source(file ='libs.R')
-    # reusable functions are in the utils.R pack
-    source(file = "utils.R")
-    
-    knitr::knit_hooks$set(imgcenter = function(before, options, envir){
-      if (before) {
-        HTML("<p align='center'>")
-      } else {
-        HTML("</p>")
-      }
-    })
-    
-    set.seed(27)
+``` r
+knitr::opts_chunk$set(
+  warning = FALSE,  
+  strip.white = TRUE,     
+  fig.path = "img/",
+  fig.width=12,
+  fig.height=8,
+  cache = FALSE           
+)
+
+file.create("references.bib")
+file.create("libs.R")
+file.create("utils.R")
+
+# libraries are in the libs.R pac
+source(file ='libs.R')
+# reusable functions are in the utils.R pack
+source(file = "utils.R")
+
+knitr::knit_hooks$set(imgcenter = function(before, options, envir){
+  if (before) {
+    HTML("<p align='center'>")
+  } else {
+    HTML("</p>")
+  }
+})
+
+set.seed(27)
+```
 
 -----
 
